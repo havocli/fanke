@@ -1,0 +1,40 @@
+@import 'common';
+
+header{
+    height:0.48rem;
+    display: -webkit-flex;
+    -webkit-justify-content:space-between;
+    -webkit-align-items:center;
+    background:url(../../img/bg_header.jpg) repeat-x;
+    padding:0 .1rem;
+    a{
+        height:0.27rem;
+        width:3.2rem;
+        border-radius: 0.13rem;
+        color:#757575;
+        font-size:0.14rem;
+        line-height: 0.27rem;
+        background: #fff;
+        .icon-sousuo{
+            float:left;
+            font-size: .2rem;
+            padding-left:0.1rem;
+            padding-right:0.12rem;
+        }
+        span{
+            float: left;
+        }
+    }
+    .icon-gengduo{
+        font-size:0.2rem;
+        color:#aaa;
+    }
+}
+
+.banner{
+    height:1.9rem;
+    img{
+        height:1.9rem;
+        width:100%;
+    }
+}
