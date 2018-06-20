@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="src/css/swiper.min.css">
     <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
@@ -15,8 +16,34 @@
     </header>
     <div class="content">
         <div class="banner">
-            <img src="img/banner_1.jpg" alt="">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/banner_1.jpg"></div>
+                    <div class="swiper-slide"><img src="img/banner_2.jpg"></div>
+                    <div class="swiper-slide"><img src="img/banner_3.jpg"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
+
+
+
+    <script src="src/js/swiper.min.js"></script>
+    <script>
+         var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            speed:1000,
+            autoplay:{
+            delay:4000,
+            disableOnInteraction:false,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            }
+        });
+    </script>
 </body>
 </html>
