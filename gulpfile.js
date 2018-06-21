@@ -12,19 +12,19 @@ var babel = require('gulp-babel');
 //拷贝html
 gulp.task("copyHtml",function(){
 	return gulp.src("*.html")
-	.pipe(gulp.dest("D:/localhost/fanke/"));
+	.pipe(gulp.dest("D:\\localhost\\fanke"));
 });
 
 //拷贝img文件夹
 gulp.task("copyImg",function(){
 	return gulp.src("img/*.{jpg,png,gif,webp}")
-	.pipe(gulp.dest("D:/localhost/fanke/img/"));
+	.pipe(gulp.dest("D:\\localhost\\fanke\\img"));
 });
 
 // //拷贝font文件夹
 gulp.task("copyFont",function(){
 	return gulp.src("font/*.{css,eot,svg,ttf,woff}")
-	.pipe(gulp.dest("D:/localhost/fanke/font/"));
+	.pipe(gulp.dest("D:\\localhost\\fanke\\font"));
 });
 
 
@@ -33,7 +33,7 @@ gulp.task('minifyCss',function(){
 	return gulp.src('./src/style/*.scss')
 	.pipe(sass())
 	// .pipe(minifyCss())
-	.pipe(gulp.dest('D:/localhost/fanke/src/css'));
+	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\css'));
 })
 
 
@@ -42,7 +42,7 @@ gulp.task('minifyJs',function(){
 	return gulp.src('./src/js/*.js')
 	.pipe(babel())
 	// .pipe(minifyJs())
-	.pipe(gulp.dest('D:/localhost/fanke/src/js'));
+	.pipe(gulp.dest('D:\\localhost\\fanke/src\\js'));
 })
 
 //监听所有任务
