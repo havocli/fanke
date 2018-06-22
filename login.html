@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+<body>
+    <header>
+        <h3>登录</h3>
+        <span></span>
+    </header>
+
+    <div class="content">
+        <nav>
+            <ul>
+                <li class="active"><a href="javascript:;">普通登录</a></li>
+                <li><a href="javascript:;">快速登录</a></li>
+            </ul>
+        </nav>
+        <section>
+            <form>
+                <ul>
+                    <li class="com_login focus">
+                        <input type="text" placeholder="点击输入手机号/Email" id="com_tel">
+                        <input type="password" placeholder="请输入密码" id="com_pas">
+                    </li>
+                    <li class="fast_login">
+                        <div class="ver">
+                            <input type="text" id="vertify" placeholder="请输入图片验证码">
+                            <img src="img/random.jpg" alt="">
+                        </div>
+                        <div class="tels">
+                            <input type="text" id="account" placeholder="请输入您的手机号">
+                            <a href="javascript:;">获取动态密码</a>
+                        </div>
+                        <input type="password" placeholder="请输入手机登录密码" id="fast_pas">
+                    </li>
+                </ul>
+
+
+                <b></b>
+                <a href="javascript:;" class="log">登   录</a>
+                <div class="register">
+                    <a href="sign.html">免费注册   ></a>
+                    <a href="javascript:;">手机账号取回密码   ></a>
+                </div>
+                <a href="javascript:;" class="other">使用其他账号登录</a>
+
+
+                <div class="bot">
+                    <a href="javascript:;"><img src="img/zhifubao.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/weibo.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/mi.jpg" alt=""></a>
+                    <a href="javascript:;"><img src="img/qq.jpg" alt=""></a>
+                </div>
+            </form>
+        </section>
+
+
+    </div>
+
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/login.js"></script>
+</body>
+</html>

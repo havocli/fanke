@@ -1,0 +1,163 @@
+@import 'common';
+header{
+    background: #b81c22;
+    height:.48rem;
+    position:relative;
+    h3{
+        text-align: center;
+        line-height:.48rem;
+        color:#fff;
+        font-size:.16rem;
+        font-weight: 500;
+    }
+    span{
+        position: absolute;
+        left:.2rem;
+        top:50%;
+        width:.14rem;
+        height:.14rem;
+        border-bottom:2px solid #fff;
+        border-left:2px solid #fff;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        cursor: pointer;
+    }
+}
+
+.content{
+    padding:0 .24rem;
+
+    nav{
+        padding-bottom:.37rem;
+        ul{
+            display: -webkit-flex;
+            -webkit-justify-content:space-between;
+            li{
+                border-bottom:3px solid transparent;
+                a{
+                    display: block;
+                    width:1.4rem;
+                    line-height:.38rem;
+                    text-align: center;
+                    font-size: .16rem;
+                    color:#666666;
+                }
+            }
+            .active{
+                border-color:#b81b22;
+            }
+        }
+    }
+    section{
+        ul{
+            
+            .com_login{
+                display: none;
+                input{
+                    width:100%;
+                    height:.36rem;
+                    display:block;
+                    outline: none;
+                    text-indent: .1rem;
+                    margin-bottom:.36rem;
+                    border:none;
+                    background: #f5f5f5;
+                }
+                #com_pas{
+                    margin-bottom:.1rem;
+                }
+            }
+            .fast_login{
+                display: none;
+                .ver{
+                    display: -webkit-flex;
+                    -webkit-justify-content:space-between;
+                    margin-bottom:.36rem;
+                    
+                    #vertify{
+                        width:1.89rem;
+                        display: block;
+                        height:.37rem;
+                        display:block;
+                        outline: none;
+                        text-indent: .1rem;
+                        border:none;
+                        background: #f5f5f5;
+                    }
+                    img{
+                        display: block;
+                        width:.94rem;
+                        height:.37rem;
+                    }
+                }
+                .tels{
+                    @extend .ver;
+                    #account{
+                        @extend #vertify;
+ 
+                    }
+                    a{
+                        display: block;
+                        border-radius:.04rem;
+                        width:1.03rem;
+                        height:.33rem;
+                        border:.02rem solid #b2b2b2;
+                        text-align:center;
+                        line-height:.33rem;
+                        color:#b71c22;
+                    }
+                   
+                }
+                #fast_pas{
+                    width:100%;
+                    height:.36rem;
+                    display:block;
+                    outline: none;
+                    text-indent: .1rem;
+                    border:none;
+                    background: #f5f5f5;
+                }
+                
+            }
+            .focus{
+                display: block;
+            }
+        }
+        b{
+            font-weight:400;
+            display:block;
+            line-height:.36rem;
+            height:.36rem;
+            color:#e8270c;
+            text-align:center;
+        }
+        .log{
+            display: block;
+            line-height:.45rem;
+            text-align: center;
+            background: #b81b22;
+            color:#fff;
+            font-size:.16rem;
+            white-space:pre-wrap;
+        }
+        .register{
+            display: -webkit-flex;
+            -webkit-justify-content:space-between;
+            a{
+                color:#4c4c4c;
+                line-height:.38rem;
+                white-space: pre-wrap;
+            }
+        }
+        .other{
+            margin-top:.18rem;
+            color:#4c4c4c;
+            line-height:.32rem;
+            display: block;
+        }
+        .bot{
+            a{
+                margin-right:.18rem;
+            }
+        }
+    }
+}

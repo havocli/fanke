@@ -1,0 +1,107 @@
+@import 'common';
+header{
+    background: #b81c22;
+    height:.48rem;
+    position:relative;
+    h3{
+        text-align: center;
+        line-height:.48rem;
+        color:#fff;
+        font-size:.16rem;
+        font-weight: 500;
+    }
+    span{
+        position: absolute;
+        left:.2rem;
+        top:50%;
+        width:.14rem;
+        height:.14rem;
+        border-bottom:2px solid #fff;
+        border-left:2px solid #fff;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        cursor: pointer;
+    }
+}
+
+section{
+    padding:0 .24rem;
+    .ver{
+        display: -webkit-flex;
+        -webkit-justify-content:space-between;
+        margin-top:.3rem;
+        
+        #vertify{
+            width:1.89rem;
+            display: block;
+            height:.37rem;
+            display:block;
+            outline: none;
+            text-indent: .1rem;
+            border:none;
+            background: #f5f5f5;
+        }
+        img{
+            display: block;
+            width:.72rem;
+            height:.35rem;
+        }
+    }
+    .tels{
+        @extend .ver;
+        margin-top:.15rem;
+        #account{
+            @extend #vertify;
+
+        }
+        a{
+            display: block;
+            border-radius:.04rem;
+            width:1.03rem;
+            height:.4rem;
+            border:.02rem solid #b2b2b2;
+            text-align:center;
+            line-height:.4rem;
+            color:#b71c22;
+        }
+       
+    }
+    #tel_code{
+        width:100%;
+        height:.36rem;
+        display:block;
+        outline: none;
+        text-indent: .1rem;
+        border:none;
+        background: #f5f5f5;
+        margin-top:.12rem;
+    }
+    #password{
+        @extend #tel_code;
+    }
+    span{
+        display:block;
+        line-height:.36rem;
+        height:.43rem;
+        color:#e8270c;
+        text-align:center;
+    }
+    .item{
+        height:.27rem;
+        line-height:.27rem;
+        text-align: center;
+        color:#b3bacd;
+        margin-bottom:.14rem;
+        a{
+            color:#4c4c4c;
+        }
+    }
+    .sign{
+        display: block;
+        line-height:.45rem;
+        text-align: center;
+        background: #b81b22;
+        color:#fff;
+        font-size:.16rem;
+        border-radius:.03rem;
+    }
+}

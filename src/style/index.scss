@@ -1,6 +1,9 @@
 @import 'common';
 body{
     background: #fafafa;
+    display: -webkit-flex;
+    -webkit-flex-direction:column;
+
 }
 header{
     height:0.48rem;
@@ -33,6 +36,11 @@ header{
     }
 }
 
+.content{
+    -webkit-flex:1;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
 .banner{
     height:1.9rem;
     .swiper-1{

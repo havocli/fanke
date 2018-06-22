@@ -33,7 +33,7 @@ gulp.task('minifyCss',function(){
 	return gulp.src('./src/style/*.scss')
 	.pipe(sass())
 	// .pipe(minifyCss())
-	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\css'));
+	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\css')); 
 })
 
 
@@ -42,7 +42,7 @@ gulp.task('minifyJs',function(){
 	return gulp.src('./src/js/*.js')
 	.pipe(babel())
 	// .pipe(minifyJs())
-	.pipe(gulp.dest('D:\\localhost\\fanke/src\\js'));
+	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\js'));
 })
 
 //监听所有任务
