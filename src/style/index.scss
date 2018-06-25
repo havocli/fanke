@@ -55,7 +55,7 @@ header{
 
     }
     .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-            bottom:-15px;
+            bottom:7px;
         }
 }
 
@@ -327,6 +327,14 @@ footer{
         span{
             font-size:.12rem;
             color:#999999;
+        }
+        &:nth-child(1){
+            .iconfont{
+                color:#b81b22;
+            }
+            span{
+                color:#b81b22;
+            }
         }
     }
 }
