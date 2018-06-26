@@ -32,7 +32,7 @@ gulp.task("copyFont",function(){
 gulp.task('minifyCss',function(){
 	return gulp.src('./src/style/*.scss')
 	.pipe(sass())
-	// .pipe(minifyCss())
+	.pipe(minifyCss())
 	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\css')); 
 })
 
@@ -41,7 +41,7 @@ gulp.task('minifyCss',function(){
 gulp.task('minifyJs',function(){
 	return gulp.src('./src/js/*.js')
 	.pipe(babel())
-	// .pipe(minifyJs())
+	.pipe(minifyJs())
 	.pipe(gulp.dest('D:\\localhost\\fanke\\src\\js'));
 })
 
